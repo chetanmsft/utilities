@@ -12,7 +12,9 @@ For more information about scenarios and usage, see [here](http://gallery.azurem
 <add key="EventHubName" value="***YOUR EVENT HUB NAME***" />
 ```
 
-- Build the solution using VS2019 and then trigger `InvokeSenders.ps1` that ensures the senders keep running.
+- Build the solution using VS2019 and then trigger `InvokeSenders.ps1` that ensures the senders keep running. You can increase the number of Senders if you wish , e.g. D4V3 VM can easily run 20 senders in parallel.
 
 - You may use this event simulator for custom event generation for your testing purposes.
 `Sensor.cs`  defines the format of the event.
+
+- Use a Azure Windows VM in the same region as your stream processing job to run the senders.
