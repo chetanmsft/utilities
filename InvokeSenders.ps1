@@ -1,4 +1,4 @@
-﻿$senderInstances=10 #Invoke several senders, but not too many so EH doesn't get throttled.
+﻿$senderInstances=20 #Invoke several senders, but not too many so EH doesn't get throttled.
 $totalHours=240 #for how long to keep the senders running
 
 $resetSendersDurationSeconds=3600 #kill and restart senders so they stay healthy
